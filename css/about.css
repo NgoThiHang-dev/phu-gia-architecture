@@ -1,0 +1,205 @@
+/*=========================
+   Start Contact Us CSS
+===========================*/
+.contact{
+	padding-top: 0px;
+}
+.contact-left{
+	height:100%;
+}
+.mapouter{
+	position:relative;
+	text-align:right;
+	width:100%;
+	height:100%;
+}
+.gmap_canvas {
+	overflow:hidden;
+	background:none!important;
+	width:100%;
+	height:100%;
+}
+.gmap_iframe {
+	width:100%;
+	height:100%;
+}
+.inner{
+	width: 100%;
+}
+.contact-info .single-info{
+	border-radius: 5px;
+    background: #fff;
+    color: #C46200;
+    padding: 30px;
+    border-style: double;
+	margin-bottom: 10px;
+}
+.contact-info .single-info:last-child{
+	margin-bottom: 0px;
+}
+.contact-info .single-info:hover{
+	transform: translateY(-5px);
+}
+.contact-info .single-info::before{
+	position: absolute;
+    z-index: -1;
+    content: '';
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+    background: #fcc6956e;
+    opacity: 0;
+    filter: blur(10px);
+}
+.contact-info .single-info:hover:before{
+	opacity: 0.8;
+}
+.contact-info .single-info i{
+	font-size: 20px;
+}
+.contact-info .single-info .content{
+	display: flex;
+	flex-direction: row;
+}
+.about-single{
+	display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+.card-content{
+	display: flex;
+	flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+	background: #fff;
+    padding: 30px 30px 10px 30px;
+    box-shadow: 0px 0px 13px #00000054;
+    border-radius: 5px;
+    color: #C46200;
+    border-style: double;
+}
+.about .single-post{
+	position: relative;
+}
+.about .single-post:hover .detail{
+	opacity:0.7;
+	visibility:visible;
+}
+.about .single-post img{
+	width: 100%;
+}
+.about .item p{
+	color: #C46200;
+	line-height: 24px;
+}
+.about .item{
+	margin-bottom: 10px;
+}
+.sumenh-title{
+	color: #C46200;
+    border-bottom-style: double;
+    line-height: 30px;
+    font-size: 20px;
+}
+.introduce{
+	display: flex;
+	justify-content: space-between;
+}
+.introduce img{
+	width: 300px;
+	border-radius: 5px;
+}
+.introduce p{
+	color: #000;
+	text-align: justify;
+}
+
+.introduce-content h4 {
+	border-left: 5px solid #C46200;
+	padding-left: 10px;
+	margin-bottom: 5px;
+}
+/*=========================
+   End Contact Us CSS
+===========================*/
+.vision{
+	background: url('../img/about/slider.svg');
+	background-size:cover;
+	background-repeat:no-repeat;
+    position: relative;
+}
+
+.see-more{
+	display: none;
+}
+.vision-item{
+	background: #fff;
+    padding: 30px 30px 10px 30px;
+    box-shadow: 0px 0px 13px #00000054;
+    border-radius: 5px;
+    color: #C46200;
+    border-style: double;
+	height: 100%;
+	text-align: center;
+}
+.vision-item i{
+	font-size: 30px;
+}
+.vision-item h4{
+	color: #C46200;
+}
+.vision-item p,
+.about-commit-item p{
+	text-align: justify;
+}
+.about-commit{
+	margin-top: 100px;
+	position: relative;
+}
+.about-commit-item h4{
+	color: #C46200;
+}
+.alignSelf-center{
+	text-align: center;
+}
+.about-commit-item img {
+	width: 200px;
+}
+.about-commit-content{
+	padding-top: 100px;
+}
+.vision-content .col-4:last-child,
+.about-commit-content  .col-4:last-child{
+	padding-right: 0;
+}
+
+.vision-content .col-4:first-child,
+.about-commit-content .col-4:first-child{
+	padding-left: 0;
+}
+.about-commit-item:first-child{
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px){
+	.vision-mb-mb{
+		margin-bottom: 10px;
+	}
+	.alignSelf-center{
+		display: none;
+	}
+	.about-commit-content{
+		padding-top: 50px;
+	}
+}
+.introduce-text.introduce-text-hide{
+	text-overflow: unset;
+	display: block;
+}
+.hide{
+	display: none !important;
+}

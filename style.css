@@ -1,0 +1,744 @@
+body{
+    font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size:14px;
+	color:#888;
+	position: relative;
+	background-color: #e8f2f8;
+}
+.row{
+	margin: 0px !important;
+	width: 100%;
+}
+#scrollUp {
+	bottom: 15px;
+	right: 15px;
+	padding: 10px 20px;
+	background: #C46200;
+	color: #fff;
+	font-size: 25px;
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	padding: 0;
+	border-radius: 3px;
+	box-shadow: 0px 0px 10px #00000026;
+}
+#scrollUp:hover{
+	background:#883E33;
+}
+
+/* Get Pro Button start */
+.pro-features {
+	position: fixed;
+	right: -300px;
+	width: 300px;
+	height: auto;
+	line-height: 46px;
+	font-size: 14px;
+	background: #fff;
+	text-align: left;
+	color: #333;
+	top: 50%;
+	transform:translateY(-50%);
+	box-shadow: -4px 0px 5px #00000036;
+	color: #fff;
+	z-index: 9999;
+	padding:20px 30px ;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+.pro-features.active{
+	right:0;
+}
+.pro-features li {
+	color: #333;
+	margin: 0;
+	padding: 0;
+	line-height: 22px;
+}
+.get-pro {
+	position: absolute;
+	left: -80px;
+	width:80px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 14px;
+	border-radius: 5px 0 0 5px;
+	background: #C46200;
+	text-align: center;
+	color: #fff;
+	top: 0;
+	cursor: pointer;
+	box-shadow: -4px 0px 5px #00000036;
+}
+
+/*=============================
+	End Global CSS 
+===============================*/
+
+/*===========================
+	Start Hero Area CSS
+=============================*/
+.slider{
+	position: relative;
+}
+.slider-content{
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+	width: 100%;
+}
+.slider-logo{
+	width: 320px;
+}
+.owl-controls{
+	display: none;
+}
+.slider .single-slider {
+	height: 80vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat:no-repeat;
+}
+.home .slider .single-slider {
+	height: 100vh;
+}
+.slider .owl-item.active{
+	animation: zoom-in-zoom-out 10s ease infinite;
+}
+@keyframes zoom-in-zoom-out {
+	0% {
+	  scale: 100%;
+	}
+	50% {
+	  scale: 120%;
+	}
+	100% {
+	  scale: 100%;
+	}
+}
+
+/* Slider Animation */
+.owl-item.active .single-slider h1{
+    animation: fadeInUp 1s both 0.6s;
+}
+.owl-item.active .single-slider p{
+    animation: fadeInUp 1s both 1s;
+}
+.owl-item.active .single-slider .button{
+    animation: fadeInDown 1s both 1.5s;
+}
+/*===========================
+	End Hero Area CSS
+=============================*/
+
+/*=============================
+	Start Schedule CSS
+===============================*/
+.schedule {
+	position: relative;
+}
+.schedule .schedule-inner {
+	 position: relative;
+	transform: translateY(-50%);
+	z-index:1; 
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	margin: 0 auto;
+	border-radius: 5px;
+    background: #fff;
+    color: #C46200;
+    padding: 30px;
+    border-style: double;
+}
+.single-content{
+	text-align: center;
+	padding: 0px 15px;
+}
+.single-content:first-child{
+	padding-left: 0px;
+}
+.single-content:last-child{
+	padding-right: 0px;
+}
+.single-content i{
+	font-size: 30px;
+}
+.single-content h4{
+	color: #C46200;
+}
+/* .schedule .single-schedule {
+	border-radius:5px;
+	background:#fff;
+	color: #C46200;
+    padding: 30px;
+	width: 230px;
+	border-style: double;
+}
+
+.schedule .single-schedule:before{
+	position: absolute;
+    z-index: -1;
+    content: '';
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+    background:#fcc6956e;
+    opacity: 0;
+    filter: blur(10px);
+}
+.schedule .single-schedule:hover:before{
+	opacity: 0.8;
+}
+.schedule .single-schedule:hover{
+	transform: translateY(-5px);
+}
+.schedule .single-schedule h4{
+	font-size: 20px;
+	font-weight:600;
+	text-transform:capitalize;
+	margin-top:13px;
+}
+.schedule .single-schedule p{
+	margin-top:22px;
+	color: #C46200;
+}
+.schedule .single-schedule a {
+	margin-top: 25px;
+	font-weight: 500;
+	display: inline-block;
+	position: relative;
+	margin-bottom: 0px;
+} */
+
+/*=============================
+	End Schedule CSS
+===============================*/
+
+/*==========================
+	Start Portfolio CSS
+============================*/
+.container-fluid{
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	width: 70%;
+    margin: 0 auto;
+}
+.single-pf{
+	width: 48%;
+	margin-bottom: 20px;
+	height: 250px;
+}
+ .single-pf{
+	position:relative;
+	border-radius: 5px;
+}
+.single-rounded{
+	position: absolute;
+	right: 3px;
+	top: 3px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	background-color: #883E33;
+	opacity: 0.7;
+	height:calc( 100% - 6px) ;
+}
+.single-rounded span{
+	background: #fff;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    color: #C46200;
+    justify-content: center;
+}
+.single-pf img{
+	height:100%;
+	border-radius: 5px;
+	width:100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+ .detail{
+	position:absolute;
+	content:"";
+	left:-100px;
+	top:0;
+	height:100%;
+	width:100%;
+	background:#f7e7d7;
+	opacity:0;
+	visibility:hidden;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+	z-index:-1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+ .single-pf:hover .detail{
+	opacity:0.7;
+	visibility:visible;
+	left: 0;
+	z-index: 1;
+}
+.btn {
+	color: #fff;
+	background: #C46200;
+	height: 48px;
+	width: 150px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	padding: 0;
+	font-size: 14px;
+	border-radius:4px;
+	opacity: 1;
+}
+.detail-btn {
+	display: flex;
+    justify-content: center;
+}
+
+.single-pf .detail-text p{
+ 	color: #000;
+	 font-size: 16px;
+}
+ .btn-all{
+	text-align: center;
+}
+.btn-all .btn{
+	border-radius: 50px;
+}
+.btn-all .btn:before{
+	border-radius: 50px;
+}
+/*==========================
+	End Portfolio CSS
+============================*/
+/* dich vu */
+#tabs-nav{
+	display: flex;
+	flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+	background: #fff;
+    padding: 30px 30px 10px 30px;
+    box-shadow: 0px 0px 13px #00000054;
+    border-radius: 5px;
+    color: #C46200;
+    border-style: double;
+}
+
+#tabs-nav li{
+	margin-right: 15px;
+    float: left;
+	position:relative;
+}
+#tabs-nav li:last-child{
+	margin:0;
+}
+#tabs-nav li a {
+	width: 100%;
+	color: #666;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: capitalize;
+	position: relative;
+	display: inline-block;
+	position:relative;
+	margin-bottom: 20px;
+}
+#tabs-nav a::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width:0%;
+	background: #C46200;
+	border-radius: 5px 5px 0 0;
+	opacity:0;
+	visibility:hidden;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+#tabs-nav li.active a:before{
+	opacity:1;
+	visibility:visible;
+	width: 100%;
+}
+#tabs-nav li.active a{
+	color:#C46200;
+}
+#tabs-nav li:hover a:before{
+	opacity:1;
+	width: 100%;
+	visibility:visible;
+}
+ #tabs-nav li:hover a{
+	color:#C46200;
+}
+#tabs-nav li a i {
+	display: inline-block;
+	margin-left: 1px;
+	font-size: 13px;
+}
+.tabs{
+	height: 100%;
+}
+#tabs-nav{
+	height: 100%;
+}
+
+.service #tabs-content{
+	width: calc(100% - 35px - 3%);
+}
+.service .tab-content{
+	display: flex;
+    flex-flow: wrap;
+	justify-content: space-between;
+	position: relative;
+}
+
+.service .single-rounded{
+	width: 35px;
+	padding: 0px;
+	justify-content: center;
+	opacity: 1;
+}
+.service .single-pf:nth-child(3),
+.service .single-pf:nth-child(4){
+	margin-bottom: 0px;
+}
+
+/*=======================
+	Start Fun Facts CSS
+=========================*/
+.fun-facts.section{
+	padding:120px 0;
+}
+.fun-facts{
+	background:url('img/fun-bg.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.project{
+	display: flex;
+	justify-content: space-between;
+}
+.project .single-fun{
+	position:relative;
+	height: 70px;
+	display: flex;
+}
+.fun-facts .single-fun i {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	font-size: 62px;
+	color: #fff;
+	height: 70px;
+	width: 70px;
+	line-height: 67px;
+	font-size: 28px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	border: 2px solid #fff;
+	border-radius: 0px;
+	top: 0;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	border-radius: 50%;
+}
+.fun-facts .single-fun:hover i{
+	color:#C46200;
+	background:#fff;
+	border-color:transparent;
+}
+.fun-facts .single-fun .content {
+	padding-left: 80px;
+	align-self: center;
+}
+.fun-facts .single-fun span {
+	color: #fff;
+	font-weight: 600;
+	font-size: 30px;
+	position: relative;
+	display: block;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s eas;
+	display: block;
+	margin-bottom: 7px;
+}
+.fun-facts .single-fun p{
+	color:#fff;
+	font-size:15px;
+}
+/*===================
+	End Fun Facts
+=====================*/
+/* process start */
+.process .single-pf{
+	text-align: center;
+}
+
+.single-pf img{
+	height: 100%;
+	border: 3px solid #C46200;
+    border-radius: 5px;
+}
+/* process end */
+/* commit start */
+.commit .row{
+	width: 100%;
+}
+.commit-item{
+	padding: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    border-radius: 5px;
+    color: #C46200;
+    border-style: double;
+}
+.commit-item .item-content{
+	background: #C46200;
+	opacity: 0.7;
+	padding: 10px;
+	height: 100%;
+}
+.commit-item .item-content h5{
+	color: #fff;
+}
+.commit-item .item-content p{
+	color: #000;
+}
+/* commit end */
+
+/*=========================
+	Start Footer CSS
+===========================*/
+.footer{
+	position:relative;
+}
+.footer .footer-top{
+	padding:100px 0px;
+	background-image:url('img/slide/footer.svg');
+	background: size 100%;;
+	background-position: center center;
+	position:relative;
+	background-repeat:no-repeat;
+}
+.footer .footer-top:before{
+	position:absolute;
+	content:"";
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	background: linear-gradient(170deg, #C46200 50%, #883E33 50%);
+    opacity: 0.4;
+}
+.footer .single-footer .social{
+	margin-top:25px;
+}
+.footer .single-footer .social li{
+	display:inline-block;
+	margin-right:10px;
+}
+.footer .single-footer .social li:last-child{
+	margin-right:0px;
+}
+.footer .single-footer .social li a {
+	height: 34px;
+	width: 34px;
+	line-height: 34px;
+	text-align: center;
+	border: 1px solid #C46200;
+	text-align: center;
+	padding: 0;
+	border-radius: 100%;
+	display: block;
+	color:#000;
+	font-size: 16px;
+}
+.footer .single-footer .social li a:hover{
+	color:#C46200;
+	background:#fff;
+	border-color:transparent;
+}
+.footer .single-footer .social li a i{
+	
+}
+.footer .single-footer.f-link li a i{
+	margin-right:10px;
+}
+.footer .single-footer.f-link li{
+	display:block;
+	margin-bottom:12px;
+}
+.footer .single-footer.f-link li:last-child{
+	margin:0;
+}
+.footer .single-footer.f-link li a {
+	display: block;
+	color: #000;
+	text-transform: capitalize;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	font-weight: 400;
+}
+.footer .single-footer.f-link li a:hover{
+	padding-left:8px;
+}
+.footer .single-footer h2{
+	color:#fff;
+	font-size:20px;
+	font-weight:600;
+	text-transform:capitalize;
+	margin-bottom:40px;
+	padding-bottom:20px;
+	text-transform:capitalize;
+	position:relative;
+}
+.footer .single-footer h2::before{
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0px;
+	height: 3px;
+	width: 50px;
+	background: #fff;
+}
+
+.footer .single-footer p{
+	color:#000;
+}
+.footer .single-footer .newsletter-inner{
+	margin-top:20px;
+	position:relative;
+}
+.footer .single-footer .newsletter-inner input {
+	background: transparent;
+	border: 1px solid #C46200;
+	height: 50px;
+	line-height: 42px;
+	width: 100%;
+	margin-right: 15px;
+	color: #000;
+	padding-left: 18px;
+	padding-right: 70px;
+	display: inline-block;
+	float: left;
+	border-radius: 0px;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	font-weight: 400;
+	border-radius: 5px;
+}
+.footer .single-footer .newsletter-inner input:hover{
+	padding-left: 22px;
+}
+.footer input::-webkit-input-placeholder {
+    opacity: 1;
+    color: #000 !important;
+}
+
+.footer input::-moz-placeholder {
+    opacity: 1;
+    color: #000 !important;
+}
+
+.footer input::-ms-input-placeholder {
+    opacity: 1;
+    color: #fff !important;
+}
+.footer input::input-placeholder {
+    opacity: 1;
+    color: #fff !important;
+}
+.footer .single-footer .newsletter-inner .button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 50px;
+	line-height: 50px;
+	width: 50px;
+	background: #fff;
+	border-left: 1px solid #fff;
+	text-shadow: none;
+	box-shadow: none;
+	display: inline-block;
+	border-radius: 0px;
+	border: none;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	border-radius: 0 5px 5px 0;
+	color: #C46200;
+	font-size: 25px;
+}
+.footer .single-footer .newsletter-inner .button i{
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+.footer .single-footer .newsletter-inner .button:hover i{
+	color:#883E33;
+}
+.footer .copyright{
+	background:#883E33;
+	padding:25px 0px 25px 0px;
+	text-align:center;
+}
+.footer .copyright .copyright-content p{
+	color:#fff;
+}
+.footer .copyright .copyright-content p a{
+	color:#fff;
+	font-weight:400;
+	text-decoration:underline;
+	display:inline-block;
+	margin-left:4px;
+}
+/*=========================
+	End Footer CSS
+===========================*/
+
+.icon-eye{
+	display: none;
+}
+
+.header-content .col-3{
+	align-self: center;
+}
+.project-icon{
+	display: none;
+}
