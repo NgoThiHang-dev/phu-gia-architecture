@@ -31,14 +31,14 @@
     background: #fff;
     color: #C46200;
     padding: 30px;
-    border-style: double;
+	box-shadow: 0px 0px 3px 3px rgb(244,164,96);
 	margin-bottom: 10px;
 }
 .contact-info .single-info:last-child{
 	margin-bottom: 0px;
 }
 .contact-info .single-info:hover{
-	transform: translateY(-5px);
+	transform: translateY(-2px);
 }
 .contact-info .single-info::before{
 	position: absolute;
@@ -118,11 +118,6 @@
 	text-align: justify;
 }
 
-.introduce-content h4 {
-	border-left: 5px solid #C46200;
-	padding-left: 10px;
-	margin-bottom: 5px;
-}
 /*=========================
    End Contact Us CSS
 ===========================*/
@@ -142,9 +137,12 @@
     box-shadow: 0px 0px 13px #00000054;
     border-radius: 5px;
     color: #C46200;
-    border-style: double;
 	height: 100%;
 	text-align: center;
+	box-shadow: 0px 0px 3px 3px rgb(244,164,96);
+}
+.vision-item:hover{
+    transform: translateY(-5px);
 }
 .vision-item i{
 	font-size: 30px;

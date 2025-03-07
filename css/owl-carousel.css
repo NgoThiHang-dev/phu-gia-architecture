@@ -165,6 +165,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  padding: 5px;
 }
 .owl-carousel .owl-item img {
   display: block;

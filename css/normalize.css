@@ -179,15 +179,18 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 	margin: 0;
+	font-family: cursive;
 }
 p {
 	color:#000;
 	margin: 0;
 	line-height:24px;
 	font-weight:400;
+	font-family: cursive;
 }
 a,button,input{
 	font-weight:400;
+	font-family: cursive;
 }
 img,a,input,h1, h2, h3, h4, h5, h6{
 	-webkit-transition:all 0.4s ease;
@@ -486,7 +489,7 @@ Preloader Area CSS
 }
 .section-title p{
 	font-size:15px;
-	color:#888;
+	color:#000;
 	margin-top:15px;
 }
 /* Overlay */
@@ -675,7 +678,6 @@ input[type="submit"] {
 	line-height: 1;
 }
 
-input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],

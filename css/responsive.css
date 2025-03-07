@@ -1742,3 +1742,9 @@ Version:	1.1
 		margin-bottom: 10px;
 	}
 }
+
+@media screen  and (min-width: 768px) and (max-width: 1500px) {
+	.slider-logo{
+		width: 250px;
+	}
+}
